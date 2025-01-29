@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Playlist</h2>
+      <ul id="songList">
+        <li data-song="song1.mp3" data-title="Perfect" data-artist="Ed Sheeran, Aarchi" data-cover="image1.jpg">
+          <img src="image1.jpg" alt="Perfect" class="song-cover">
+          <span>Perfect - Ed Sheeran,Aarchi</span>
+        </li>
+        <li data-song="song2.mp3" data-title="Husn" data-artist="Anuv Jain ,Aarchi" data-cover="image2.jpg">
+          <img src="image2.jpg" alt="Husn" class="song-cover">
+          <span>Husn - Anuv Jain,Aarchi</span>
+        </li>
+        <li data-song="song3.mp3" data-title="Rupai ki rajula" data-artist="Diksha Dhoundiyal,Aarchi" data-cover="image3.jpg">
+          <img src="image3.jpg" alt="Rupai ki rajula" class="song-cover">
+          <span>Rupai ki rajula - Diksha Dhoundiyal,Aarchi</span>
+        </li>
+        <li data-song="song3.mp3" data-title="Rang" data-artist="Panther,Aarchi" data-cover="image4.jpg">
+          <img src="image4.jpg" alt="Rang" class="song-cover">
+          <span>Rang - Panther,Aarchi</span>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <header>
+        <h1>Spotify Clone</h1>
+      </header>
+      <main>
+        <div class="player">
+          <img src="WhatsApp Image 2024-11-25 at 00.32.57_31968d71.jpg" alt="Album Cover" class="album-cover" id="albumCover">
+          <h2 class="song-title" id="songTitle">Song Title</h2>
+          <p class="artist" id="artistName">Artist Name</p>
+          <div class="controls">
+            <button id="prevBtn">⏮️</button>
+            <button id="playPauseBtn">▶️</button>
+            <button id="nextBtn">⏭️</button>
+          </div>
+          <div class="progress-container">
+            <input type="range" id="progressBar" value="0" min="0" max="100">
+            <span id="currentTime">0:00</span> / <span id="duration">3:45</span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
